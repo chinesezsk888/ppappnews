@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app详情页webview</title>
+    <link rel="stylesheet" href="../../dist/css/newdetail.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src='../../dist/js/newdetail.min.js'></script>
+    <!-- <script src='../css/app_news_detail.css'></script> -->
+    <!-- 此次引入的文件和引文的名称不一样。要跟app说的 -->
+    <!-- <script>
+        //监控资源加载错误(img,script,css,以及jsonp)
+        window.addEventListener('error', function (e) {
+            console.log("===" + e.message + "===");
+            location.reload();
+        }, true);
+        window.onerror = function (errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
+            console.log("错误信息：", errorMessage);
+            console.log("出错文件：", scriptURI);
+            console.log("出错行号：", lineNumber);
+            console.log("出错列号：", columnNumber);
+            console.log("错误详情：", errorObj);
+        }
+    </script> -->
+</head>
+
+<body>
+    <!-- 超大字体：fontexbig 大字体：fontbig 小字体：fontsm 超小字体：fontexsm  普通大小：fontml  -->
+    <!-- 夜间：modelyj  白天：modelbai  -->
+    <!--  系统默认字体：defultft 宋体：songtift-->
+    <!-- wifi: netwifi  4G:netfourg -->
+    <!-- 无图模式： emptyimg  有图模式： hasimgs(默认有图) -->
+    <div class="app_new_detail fontml  songtift modelbai netwifi hasimgs">
+        <section class='and_relate_box and_top'>
+            <div class='and_relate' data-contType='5' data-contId='1267986' data-cid='' data-optType='0'>
+                <div class='ar_icon_type xinwen_type'></div>
+                <div class='ar_word'>【图集】图集｜网络媒体国防行：记者直击海军陆战队两栖战车雨中训练</div>
+            </div>
+            <div class='and_relate' data-contType='4' data-contId='1265622' data-cid='' data-optType='0'>
+                <div class='ar_icon_type xinwen_type'></div>
+                <div class='ar_word'>图文直播-上海水晶天-标题-很很长很长很长很长很长</div>
+            </div>
+            <div class='and_relate' data-contType='3' data-contId='1277276' data-cid='' data-optType='0'>
+                <div class='ar_icon_type arctive_type'></div>
+                <div class='ar_word'>【专题】2018.1.12-fxf专题-文章样式</div>
+            </div>
+            <div class='and_relate' data-contType='3' data-contId='1277275' data-cid='' data-optType='0'>
+                <div class='ar_icon_type arctive_type'></div>
+                <div class='ar_word'>【专题】2018.1.12 专题fxf-专题样式-无正文</div>
+            </div>
+            <div class='and_relate' data-contType='9' data-contId='1286979' data-cid='' data-optType='0'>
+                <div class='ar_icon_type video_type'></div>
+                <div class='ar_word'>【直播】测试没有画面的视频直播</div>
+            </div>
+            <div class='and_relate' data-contType='2' data-contId='1328247' data-cid='' data-optType='0'>
+                <div class='ar_icon_type xinwen_type'></div>
+                <div class='ar_word'>埃塞俄比亚：联邦快递两起737-8坠机“明显相似”撒谎</div>
+            </div>
+        </section>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='4' data-contId='1265622' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/106/836.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> 直播 </div>
+            </div>
+            <div class='desc_image'>图文直播-上海水晶天-标题-很很长很长很长很长很长【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='9' data-contId='1286979' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/184/123.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> <span class='live_now'>•</span> 直播 </div>
+            </div>
+            <div class='desc_image'>测试没有画面的视频直播【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='4' data-contId='1282071' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/492/851.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> 直播 </div>
+            </div>
+            <div class='desc_image'>fxf图文直播111【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='2' data-contId='1328247' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/563/212.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'>
+                    <div class='icon_type shipin'></div> <span>3</span>
+                </div>
+            </div>
+            <div class='desc_image'>埃塞俄比亚：联邦快递两起737-8坠机“明显相似”撒谎【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='13' data-contId='1332452' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/593/640.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'>
+                    <div class='icon_type shipin'></div> <span>3</span>
+                </div>
+            </div>
+            <div class='desc_image'>fxf创建多视频新闻【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='34' data-contId='1285464' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/img/sparker_big.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> 01:05 </div>
+            </div>
+            <div class='desc_image'>我请求上帝帮帮我们，就像之前那样【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='43' data-contId='1348193' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/5/576/765.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> 03:24 </div>
+            </div>
+            <div class='desc_image'>媒体新闻五六七八九十，二三四五六七八九？一二三四五六七八九“一二三四五六七八九”一二三四五六七八。十【点击图片查看详情】</div>
+        </div>
+        <section class='and_news_box'>
+            <div class='and_video_panel'>
+                <div class='wutu_type_box'>
+                    <div class='wutu_video_bg'></div>
+                    <p class='wutu_desc'>点击加载视频</p>
+                </div>
+                <div class='and_video_item' data-index='0'>
+                    <div class='and_video_item_madel'></div>
+                    <div class='liuliang_card'>
+                        <div class='shipin_play_icon'></div>
+                        <p>5.4M流量</p>
+                    </div> <img class='and_video_poster img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/974/691.jpg'>
+                    <div class='and_video_play'></div>
+                    <div class='video_duration'> <span>01:37</span> </div>
+                </div>
+                <div class='and_desc_video'></div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='0'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/5/75/749.gif' data-width='639' data-height='223'
+                        data-trueheight='243'>
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='1'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/5/88/785.jpg' data-width='600' data-height='307'
+                        data-trueheight='334'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'><a class='art_a' data-contType='6' data-contId='http://www.baidu.com' data-cid=''
+                        data-optType='0'>
+                        <font color="#000000">外链跳转到</font>
+                    </a><a class='art_a' data-contType='6'
+                        data-contId='http://image.thepaper.cn/html/pano/2014/08/ssy/index.html' data-cid=''
+                        data-optType='0'>澎湃H5页面</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='2' data-contId='1247876'
+                        data-cid='' data-optType='0'>普通新闻</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='10' data-contId='1274898'
+                        data-cid='' data-optType='0'>视频新闻</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='4' data-contId='1265622'
+                        data-cid='' data-optType='0'>图文直播</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='9' data-contId='1265394'
+                        data-cid='' data-optType='0'>视频直播</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='5' data-contId='1259463'
+                        data-cid='' data-optType='0'>图集新闻</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='2' data-contId='1279858'
+                        data-cid='' data-optType='0'>有正文专题</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='3' data-contId='1274463'
+                        data-cid='' data-optType='0'>无正文专题</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='13' data-contId='1279859'
+                        data-cid='' data-optType='0'>权威发布</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='6'
+                        data-contId='http://ceshi.thepaper.cn/wap/v3/jsp/newsDetail_forward_1289836' data-cid=''
+                        data-optType='0'>官方辟谣</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='28' data-contId='1273904'
+                        data-cid='' data-optType='0'>问政图文直播</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='15' data-contId='1270083'
+                        data-cid='' data-optType='0'>问政视频直播</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='7' data-contId='10000142'
+                        data-cid='' data-optType='0'>话题详情页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='29' data-contId='26995'
+                        data-cid='' data-optType='0'>问吧视频直播</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='34' data-contId='1285103'
+                        data-cid='' data-optType='0'>湃客普通新闻</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='36' data-contId='1285832'
+                        data-cid='' data-optType='0'>湃客视频新闻</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='21' data-contId='25950'
+                        data-cid='' data-optType='0'>普通频道页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='24' data-contId='26069'
+                        data-cid='' data-optType='0'>视频频道页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='22' data-contId='25462'
+                        data-cid='' data-optType='0'>普通栏目页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='23' data-contId='26151'
+                        data-cid='' data-optType='0'>视频栏目页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='21' data-contId='-7' data-cid=''
+                        data-optType='0'>湃客频道页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='37' data-contId='27003'
+                        data-cid='' data-optType='0'>湃客栏目页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='30' data-contId='-3' data-cid=''
+                        data-optType='0'>问吧精选页</a>
+                    <div class='art_word_p'></div>
+                    <font color="#000000">外链跳转到</font><a class='art_a' data-contType='30' data-contId='25980'
+                        data-cid='' data-optType='0'>问吧栏目页</a>
+                    <div class='art_word_p'></div>从22岁到34岁，从一名普通白领到专职志愿者，王萌萌用10余年青春，在沪滇之间频繁穿梭。
+                </div>
+            </div>
+            <section class='and_audio_panel' data-index='0'>
+                <div class='and_audio_play'></div>
+                <div class='and_audio_infor'>
+                    <div class='and_audio_name'>这是一段音频</div>
+                    <div class='and_audio_bar'></div>
+                    <div class='and_audio_time'> <span class='at_start'>00:00</span> <span class='at_end'>22:39</span>
+                    </div>
+                </div>
+            </section>
+            <div class='anb_news_word'>
+                <div class='anw_word'>
+                    <B>她深入云南贫困山区，走访当地马鹿塘小学等多所乡村学校。马鹿塘小学是当地海拔最高、条件最差的学校，山路陡峭，一不小心就有可能坠落山崖。不过当她走进校门听到朗朗书声时，眼泪一下子涌了出来，她感受到了一种深入内心的温暖和希望。</B>
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='2'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/212/903.jpg' data-width='640'
+                        data-height='7360' data-trueheight='8000'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>
+                    <I>大量走访后，王萌萌开始资助贫困孩子，创建了“一对一物质资助加情感关怀”的公益助学模式，帮北京、上海等地的爱心人士和贫困学生结对，至今已使200多名贫困生得到资助。</I>
+                    <div class='art_word_p'></div>
+                    <div class='art_word_p'></div><u>2013年，云南贫困山区的孩子们以特殊的方式向王萌萌表达他们的爱。受访者供图</u>
+                    <div class='art_word_p'></div>
+                    2016年，王萌萌被中宣部、中组部和中央文明办等部门任命为全国学雷锋志愿服务先进典型“最美志愿者”。她的事迹得到了中央文明办高度评价和鼓励，中央文明办领导接连三次做出批示，褒奖“王萌萌为弘扬志愿服务文化做出了突出贡献”。2018年，王萌萌又成为第八届上海市“慈善之星”的候选人。
+                    <div class='art_word_p'></div>
+                    “很多人问我，你既然想要帮助这些山区孩子，为什么不一直留在那里？我说，我一个人的力量是有限的，我希望通过自己对志愿服务文化的传播，感染并带动更多的人。”
+                    王萌萌说，那里已是她的第二故乡，是无论如何都割舍不了的感情牵绊。<div class='art_word_p'></div>偶然机会初入山区<div class='art_word_p'></div>
+                    王萌萌初次进入山区，是一次偶然。<div class='art_word_p'></div>
+                    2006年夏天，刚从苏州一所大学毕业的王萌萌，只身来到上海成为一名小白领。由于收入不高，她与另外两名女生一起租住一个房间。朝九晚五的工作，每天从拥挤的房间出门，进入拥挤的地铁，然后再进入办公楼，这种周而复始生活，一度让她深感迷茫，“这不是我想要的生活状态。”
+                    <div class='art_word_p'></div>一次偶然的机会，王萌萌得知一家叫做“希望书库”的公益组织在招募志愿者，主要工作是给贫困山区的希望小学募捐图书，并创建爱<font
+                        color="#808080">心图书室。抱着试试看的想法，她顺利通过了面试。<div class='art_word_p'></div>
+                        “面试官告诉我，他们曾去当地山区学校调研，发现那里的孩子连什么是‘课外书’都不知道，而一本新华字典早已被翻得破损不堪，因为整所学校就只有一本新华字典。” 王萌萌被这个细节深深打动了。<div
+                            class='art_word_p'></div>
+                        王萌萌从小就热爱阅读，她说自己是个“离开书就不能活的孩子”，对她来说，闲暇时看课外书，是件特别快乐的事情。特别在初中三年，整个青春期最苦闷、性格塑造最不确定的年龄段，阅读和日记曾经是她唯一的慰藉，也幸亏有了这些“闲书”，才让她没有误入歧途。
+                    </font>
+                    <div class='art_word_p'></div>
+                    <font color="#800080">
+                        “正因为这样，我才体会到，阅读对于青少年成长有多么重要，也就更加不能想象，一个没有书陪伴的童年，会有多么苦闷。”于是，她加入了“希望书库”上海办事处，当起了全职志愿者。<div
+                            class='art_word_p'></div>
+                        整整两年，只有很少的生活补贴，家人、朋友都感到不可理解，可她说志愿者工作对她来说意义非常，能为山区的贫困学生做实事和好事，是自我价值的体现。<div class='art_word_p'>
+                        </div>2006年10月，王萌萌担任领队，</font>
+                    将募集到的图书运到当地学校，筹建爱心图书室。这也是她第一次真正走进云南贫困山区。在那里，她亲眼目睹了当地生活的艰辛困苦，和大城市恍然两个世界，但那些孩子是那么淳朴、乐观。<div
+                        class='art_word_p'></div>
+                    当她看见衣衫破烂、光着脚的孩子们走进图书室，眼睛里瞬间闪耀惊喜兴奋的光芒，拿起书席地而坐，如饥似渴地读着，便觉得自己的艰辛劳累，有了无与伦比的意义。“这就是我去做这些事情的价值所在，志愿工作再苦再累都是值得的。”王萌萌说。从此，她与这里有了再也割舍不下的感情牵绊。
+                    <div class="and_pk_vote_box">
+                        <div class="vote_title">
+                            <div class="apt_icon"></div>
+                            <div class="apt_right_box">
+                                <p class="apt_word">1111</p>
+                                <div class="vote_jion">
+                                    <div class="apj_icon"></div>
+                                    <p class="apj_jion_num_box"> <span class="countvote"></span>人参与 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apvb_pk" data-vote-id="452" id="452">
+                            <div class="app_type">
+                                <div class="at_agree"></div>
+                                <div class="at_noagree"></div>
+                                <div class="pk_icon"></div>
+                            </div>
+                            <div class="at_agree_box aa_word" data-vote-num="" data-option-id="1060">
+                                <p>222</p>
+                            </div>
+                            <div class="at_noagree_box aa_word" data-vote-num="" data-option-id="1061">
+                                <p>333</p>
+                            </div>
+                        </div>
+                        <div class="at_change_agree_box">
+                            <div class="at_agree_red">
+                                <div class="aar_icon"></div>
+                                <p>222</p>
+                            </div>
+                            <div class="at_agree_blue">
+                                <div class="aab_icon"></div>
+                                <p>333</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='art_word_p'></div>
+                    <div class='art_word_p'></div>王萌萌与黄茅岭中心校幼儿班的孩子们在一起。<div class='art_word_p'></div>只身前往山村走访<div
+                        class='art_word_p'></div>走进山区后，王萌萌觉得需要去当地支教，才能与师生进行更多的深入交流。<div class='art_word_p'></div>
+                    2007年5月底，在红河州元阳县黄茅岭中心小学的彝族教师马素英的帮助下，王萌萌只身一人来到这里。走进学校的那一天是6月1日，孩子们都特别高兴，因为每年的六一儿童节学校会专门杀一头猪，也只有这一天，孩子们才能吃到肉。
+                    <div class="and_normall_vote_box">
+                        <div class="vote_title">
+                            <div class="apt_icon"></div>
+                            <div class="apt_right_box">
+                                <p class="apt_word">11</p>
+                                <div class="vote_jion">
+                                    <div class="apj_icon"></div>
+                                    <p class="apj_jion_num_box"> <span class="countvote"></span>人参与 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anvb_normall_box" data-vote-id="453" id="453">
+                            <ul>
+                                <li class="anb_change_type" data-option-id="1062" data-vote-num=""> <span
+                                        class="check_title">222</span>
+                                    <div class="votenum_box"></div> <span class="check_number"></span>
+                                </li>
+                                <li class="anb_change_type" data-option-id="1063" data-vote-num=""> <span
+                                        class="check_title">333</span>
+                                    <div class="votenum_box"></div> <span class="check_number"></span>
+                                </li>
+                                <li class="anb_change_type" data-option-id="1064" data-vote-num=""> <span
+                                        class="check_title">444</span>
+                                    <div class="votenum_box"></div> <span class="check_number"></span>
+                                </li>
+                                <li class="anb_change_type" data-option-id="1065" data-vote-num=""> <span
+                                        class="check_title">5555</span>
+                                    <div class="votenum_box"></div> <span class="check_number"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='art_word_p'></div>
+                    <div class='art_word_p'></div>
+                    很快，王萌萌发现，在这里支教对她并不合适，“很多孩子并不会讲汉语，他们的民族语言我又听不懂，语言沟通特别难。”面对现实，她立即改变想法，决定先从自己能够做的大量调查走访开始。而马素英也就此成为王萌萌多年以来的公益搭档。
+                    <div class='art_word_p'></div>
+                    在当地，乡中心小学又被称为“中心校”，是当地条件最好的小学，另外还有数十所“村校”，都分散在各个山村里。一般来说，海拔越高的村子，条件就越差，山路也越难走。但王萌萌每年都要去好几次黄茅岭，每次一待就是半个月左右，不断爬山，去村里走访，深入最偏远最贫困的地方。
+                    <div class='art_word_p'></div>
+                    让她至今难忘的，是当地海拔最高、条件最差的马鹿塘小学。从黄茅岭乡中心小学走到马鹿塘小学，单程就要8个小时，再加上山路陡峭危险，一不小心就有可能坠落山崖。在这个小学里，被派去的青壮年男教师中，只有一位腿部有残疾的瑶族男教师坚持了下来。
+                    <div class='art_word_p'></div>
+                    听说了这件事情后，王萌萌暗下决心，无论如何都要去一次。2007年10月，在马素英的联络帮助下，王萌萌终于得以成行。出发的那天在下雨，山路雾茫茫的一片，脚下打滑，两边是陡峭的山崖，此时，她的心里只有一个念头，就是“要活着到达”。从早上8点一直到下午5点多，她终于抵达了马鹿塘小学。
+                    <div class='art_word_p'></div>
+                    当走进校门，看到教室里暖暖的灯光，听到朗朗的读书声，王萌萌的眼泪一下子就涌了出来，那是一种深入内心的温暖和希望。给孩子们分完礼物，王萌萌便到教师的住处聊天。没想到，半个多小时后，孩子们又都回来了，每个人手里都拿着自家菜地里摘的青菜、花椒等礼物，回赠给她，“特别感动，那种满溢的感情，很难表达。”
+                    <div class='art_word_p'></div>
+                    生活的馈赠，成了王萌萌的创作源泉，开始了第一部长篇小说《大爱无声》的创作，仅三个多月时间，她就完成了26万余字的初稿。《大爱无声》得到上海文艺出版社的青睐，出版后广受好评，成为国内第一部由志愿者写志愿者的长篇小说。之后。他还创作了《米九》《爱如晨曦》《云中书》等作品。
+                    <div class='art_word_p'></div>
+                    <div class='art_word_p'></div>孩子亲吻王萌萌。<div class='art_word_p'></div>贫困孩子受益“一对一”助学<div
+                        class='art_word_p'></div>大量的走访调查之后，王萌萌开始资助贫困孩子。<div class='art_word_p'></div>
+                    她明白，仅靠个人力量是微不足道的，只有把这份爱心扩展开去，才可能化作较大的能量。于是，王萌萌与马素英创建了“一对一物质资助加情感关怀”的公益助学模式。她和马素英作为纽带，帮北京、上海、青岛等地的爱心人士和元阳县的贫困学生结对，至今已使200多名贫困生得到资助。
+                    <div class='art_word_p'></div>
+                    这个公益项目的创建，最初源于王萌萌与苗族贫困学生小美的结对。小美未满月时，父亲就因矿难去世，母亲远走他乡，小美由奶奶带大，家境困窘，随时可能辍学。看到小美乖巧懂事，心生怜爱的王萌萌决定与之结对、长期资助，直至小美完成学业。
+                    <div class='art_word_p'></div>
+                    “马老师特别不容易。”王萌萌说，自己大部分时间身在上海，更多的工作是由身在元阳的马素英完成的。她需要接收、保管、分发爱心人士寄来的助学款和物资，为了确保专款专用，对于年龄较小的学生，还需要按月分发、记账、拍照取证。马素英几乎家访过每个受助对象，深入了解家庭情况，搜集学生信息，工作量是巨大的。
+                    <div class='art_word_p'></div>
+                    做公益不是一件容易的事情。无论是王萌萌还是马素英，都遭遇过不少误解和不公，但她们都没有放弃。如今，王萌萌依然会每年去几次元阳县，尽可能地去每所学校，了解受资助孩子们的现状，比如面临的新问题、与资助人是否保持联系等，再反馈给资助人。
+                    <div class='art_word_p'></div>
+                    “这些工作其实很累，特别琐碎，又必须很细致。但为了孩子们，我一定会坚持下去。”王萌萌说，看到他们的成长、进步，便觉得一切都值得。小美小学毕业后的一天，王萌萌接到了一个电话，小美告诉她，自己以全乡第三的成绩，考到了县里最好的中学。“那一刻的我，比自己的小说出版时更有成就感。”王萌萌说。如今的小美，也已考入大学，并成为王萌萌志愿者队伍中的一员。
+                    <div class='art_word_p'></div>
+                    每次想起仍在青岛的父母，王萌萌都会觉得有些愧疚，因为她去云南元阳的次数，远远多于回青岛看父母的次数。对于她来说，云南元阳，已经成为她的第二故乡，是无法割舍的感情牵绊。如今的王萌萌，已在和爱心团队的伙伴启动一个新的公益项目，以提高当地女性的经济收入和社会地位。
+                </div>
+            </div>
+        </section>
+        <section class='and_luokuan'>
+            <div class='al_aditor_in_change'>
+                <p>责任编辑：冯晓飞</p>
+                <p></p>
+            </div>
+            <div class='al_other_change'>
+                <p>图片编辑：冯晓飞</p>
+                <p>校对：冯晓飞</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

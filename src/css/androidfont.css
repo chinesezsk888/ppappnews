@@ -1,0 +1,29 @@
+
+@font-face{
+    font-family: FzBiaoYsk;
+    src: url('./FZBIAOYSK.ttf');
+}
+body {
+    background-color: #fff;
+}
+.app_new_detail {
+    background-color:#fff;
+    /* background-color:#F6F6F6; */
+}
+.app_new_detail.modelyj {
+    background-color: #262626; 
+    /* background-color: #222222; */
+}
+.img_default{
+    background-image: url(../images/default.png);
+}
+.modelyj .img_default{
+    background-image: url(../images/default2.png);
+}
+/* 字体类型 */
+.defultft.app_new_detail {
+    font:12px/18px "",sans-serif;
+}
+.songtift.app_new_detail {
+    font:12px/18px "FzBiaoYsk",sans-serif;
+}

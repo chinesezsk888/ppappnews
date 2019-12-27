@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app详情页webview</title>
+    <link rel="stylesheet" href="../../dist/css/newdetail.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src='../../dist/js/newdetail.min.js'></script>
+    <!-- <script src='../css/app_news_detail.css'></script> -->
+    <!-- 此次引入的文件和引文的名称不一样。要跟app说的 -->
+    <!-- <script>
+        //监控资源加载错误(img,script,css,以及jsonp)
+        window.addEventListener('error', function (e) {
+            console.log("===" + e.message + "===");
+            location.reload();
+        }, true);
+        window.onerror = function (errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
+            console.log("错误信息：", errorMessage);
+            console.log("出错文件：", scriptURI);
+            console.log("出错行号：", lineNumber);
+            console.log("出错列号：", columnNumber);
+            console.log("错误详情：", errorObj);
+        }
+    </script> -->
+</head>
+
+<body>
+    <!-- 超大字体：fontexbig 大字体：fontbig 小字体：fontsm 超小字体：fontexsm  普通大小：fontml  -->
+    <!-- 夜间：modelyj  白天：modelbai  -->
+    <!--  系统默认字体：defultft 宋体：songtift-->
+    <!-- wifi: netwifi  4G:netfourg -->
+    <!-- 无图模式： emptyimg  有图模式： hasimgs(默认有图) -->
+    <div class="app_new_detail fontml  songtift modelbai netwifi hasimgs">
+        <section class='and_relate_box and_top'>
+            <div class='and_relate' data-contType='5' data-contId='1267986' data-cid='' data-optType='0'>
+                <div class='ar_icon_type xinwen_type'></div>
+                <div class='ar_word'>【图集】图集｜网络媒体国防行：记者直击海军陆战队两栖战车雨中训练</div>
+            </div>
+            <div class='and_relate' data-contType='4' data-contId='1265622' data-cid='' data-optType='0'>
+                <div class='ar_icon_type xinwen_type'></div>
+                <div class='ar_word'>图文直播-上海水晶天-标题-很很长很长很长很长很长</div>
+            </div>
+            <div class='and_relate' data-contType='3' data-contId='1277276' data-cid='' data-optType='0'>
+                <div class='ar_icon_type arctive_type'></div>
+                <div class='ar_word'>【专题】2018.1.12-fxf专题-文章样式</div>
+            </div>
+        </section>
+        <section class='relate_box_img'></section>
+        <section class='and_news_box'>
+            <div class='anb_news_word'>
+                <div class='anw_word'>裴晨昕 谷雨实验室</div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='0'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/623.jpg' data-width='671'
+                        data-height='409' data-trueheight='445'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>
+                    单霁翔退休了。接任者是敦煌研究院院长王旭东。两人的任内，故宫和敦煌都成为文博产业的超级IP。对于单霁翔来说，他最后的得意之作是故宫的上元之夜，这或许是个不错的结局。过去七年间，这个充满独特魅力的博物院院长一直处于夹缝之中，争议也此起彼伏。他没有选择四平八稳，而是竭力留下一份鲜活的故宫遗产。
+                    <div class='art_word_p'></div>撰文 | 裴晨昕<div class='art_word_p'></div>编辑 | 向荣<div class='art_word_p'>
+                    </div>来源 | 贵圈（entguiquan）<div class='art_word_p'></div>单霁翔似乎在一夜间老了。<div class='art_word_p'></div>
+                    正月十五的紫禁城上元灯节后，他带着显眼的眼袋和老年斑出现在媒体采访中，发量仍然茂密，却成了斑驳的灰色。这位在任7年的故宫博物院院长，在公众面前露出了少有的疲态。<div
+                        class='art_word_p'></div>
+                    这份疲惫也许来自上元灯节的筹备——从筹划到落实只有10天左右的时间。元宵节前3天，单霁翔在亚布力中国企业家论坛上“官宣”了故宫94年来的首次夜场活动，引起让“官网都炸了”的抢票，和一浪高过一浪的舆论热度。
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='1'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/624.jpg' data-width='1024'
+                        data-height='628' data-trueheight='683'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 2019年2月19日，故宫博物院院长单霁翔向执勤的工作人员问好。<div class='art_word_p'></div>
+                    短短两天内，这场灯会的口碑几度翻转，热度与争议同时到来。这样的嘈杂和混响某种程度上是故宫博物院院长单霁翔的常态。<div class='art_word_p'></div>
+                    他是故宫的第一位“明星院长”，以前鲜有人知道故宫的“掌门人”姓甚名谁。单霁翔因为出现在《鲁豫有约》《朗读者》《杨澜访谈录》《国家宝藏》等节目中，亮相在各种各样的论坛、讲座和年会上，用幽默的语言揭开了故宫的面纱而家喻户晓。网友把他捧成网红，他一本正经地说，没觉着自己是个幽默的人，“和相声演员比还差得远”。
+                    <div class='art_word_p'></div>
+                    他的个人形象与故宫的文化IP深度绑定，民众对他几乎是压倒性的好评，只有被他的票务改革革了饭碗的黄牛，恶狠狠地威胁“一旦你走出故宫，我们就让你好看！”在公众舆论之外，故宫的工作人员和文博行业中流传着对他的微词，有的来自专业上的理念差异，有的是被触动利益后的反弹，还有些只是针对故宫博物院院长这一职位的调侃和发泄。
+                    <div class='art_word_p'></div>
+                    故宫不仅是一座博物院，也是有1500多名员工的事业单位；故宫博物院的院长不仅有宣传故宫文化的天职，还背负着沉重的管理职责。多重身份下的单霁翔，生活远不如网络上那个萌萌哒的网红院长般轻松和愉快。<div
+                        class='art_word_p'></div>1<div class='art_word_p'></div>
+                    鲁豫曾问单霁翔，当故宫博物院的院长是不是战战兢兢。单霁翔立即承认，还主动加了一句，如履薄冰。<div class='art_word_p'></div>
+                    故宫博物院建院94年，前后6任院长，“每一任都做出了巨大牺牲，做出了艰苦卓绝的努力，但是每一任院长都没有好下场”。单霁翔说，这工作是“有今天，没明天”。<div class='art_word_p'>
+                    </div>
+                    从接任那天起，紧张的情绪就一直操控着他，“或是因为安全问题，或是因为文物损毁，一件事没有做好，文物损坏了，你对不起民族、对不起国家，就要下台”。单霁翔的前任郑欣淼在任10年做了大量实事，清点了全部文物，清退了盘踞在故宫内的其他单位。然而2011年故宫失窃案后，他黯然离开院长职位，离任的会议上，一度哽咽。
+                    <div class='art_word_p'></div>
+                    单霁翔希望自己能打破故宫院长没有好下场的魔咒，“只有不出事，才能做好事”。为此，他敏感到事无巨细的程度。为了监测舆情，他让秘书每天传送两次速报，内容涉及过去的12小时内各界对故宫的评价。“国内的国外的都有，好的坏的都有，影视的文字的都有。”只要上了热搜的故宫话题，无论是游客抱着孩子随地小便，还是上元灯节一票难求，他都会站出来亲自回应。
+                    <div class='art_word_p'></div>但单霁翔将自己拉近民众的姿态，无法消弭全部争议。<div class='art_word_p'></div>
+                    上元灯节夜游故宫的活动还没结束，争议已经从四面八方涌来。人们对这次活动的热情超过了单霁翔和工作人员的预期，3500张门票却有3000万人在抢。黄牛手中赠票的价格一路炒到1万5，堪比当红小鲜肉见面会门票。“全国各地的都在抢。”黄牛老钟向咨询者分析门票紧俏的原因，他手里的一张赠票就以1万2的成交价被一位山西煤老板买下。
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='2'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/626.jpg' data-width='1024'
+                        data-height='628' data-trueheight='683'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 2019年2月19日，上元灯节夜游故宫活动现场。<div class='art_word_p'></div>
+                    正月十五当晚，近万人堵在午门广场。大爷大妈嚷嚷着“大家一起往里冲”。现场几十位安保人员束手无策。站在午门上的保卫处工作人员一度压力大到决堤，直接摔了手中滋滋作响的对讲机。“缺乏统筹调度，缺乏预案”“就是几年前故宫第一次限流失败的情景再现”，一名在现场的工作人员抱怨。有人在微博上对保卫处和开放处的工作人员表示心疼——正月十五疏散完人群加班到凌晨1点，第二天早上8点又要开始工作：“各项措施完备了，才夜间开放比较好，一味取悦趋势，到底把员工放哪里？”
+                    <div class='art_word_p'></div>言语间将矛头指向接下上元灯节活动的单院长。<div class='art_word_p'></div>
+                    网络上，更多的讨论集中在灯会的“糟糕审美”。有些短视频给故宫灯光秀配上各种广场舞神曲，“土味迪厅”“单老根大舞台”的调侃层出不穷。故宫的拥趸哀叹故宫成了“一个任人打扮的小姑娘”。戏剧导演孟京辉在微博上，发了角楼自然状态下圆月当空夜景图和投射着红色巨幅宣传画的太和门对比图，评论“你让我无语，我就无语。”
+                    <div class='art_word_p'></div>
+                    更有人质疑故宫在这次操作中违反了“博物馆职业道德规范”。入口墙上醒目打出的“上新了”属于广告商标，其专利所属机构为春田影视传媒。太和门上打出的“保国利民，光耀巅峰”标语更是被指疑似“以藏头形式高亮显示‘保利’‘光峰’两家企业名称”，而这三家企业（天津华文文化传播有限公司春田影视传媒、中国保利集团深圳光峰科技股份有限公司），恰是故宫官宣为“此次灯光照明及灯光布景提供支持”的三家。单霁翔在接受媒体采访中透露，灯光秀和投影都是赞助的。北京大学赛克勒考古与艺术博物馆馆长宋向光教授在微博上公开质疑，在太和殿上疑似给赞助商打广告，是否符合“国际博协博物馆职业道德”的有关规定。
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='3'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/627.jpg' data-width='1024'
+                        data-height='628' data-trueheight='683'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 活动当天太和门上打出的“保国利民，光耀巅峰”标语，被质疑有广告的嫌疑。<div class='art_word_p'></div>
+                    一位前故宫工作人员表示，“不能直接把保利和光峰那么二的广告就直接打到太和门上，胡闹。你找一地儿放个展板，你放一个广告灯箱都能忍。博物馆其实是可以接受资助上做广告的，但是不能这么干，有点吃相太难看了，或者是这个权力实在是没有边际了。”
+                    <div class='art_word_p'></div>对于这些指责，单霁翔并未回应，而是给观众埋下了去文华殿前夜赏海棠的念想。<div class='art_word_p'></div>2
+                    <div class='art_word_p'></div>故宫这些年越来越热，并非所有人都为此欢欣鼓舞。人们对故宫的兴趣不断增加，但80%的游客仍然只走中轴线，不看展览。<div
+                        class='art_word_p'></div>
+                    有批评者认为，单霁翔带领的故宫，一味媚俗，远离了传统，对文物少了敬畏。“热闹非凡，却已千疮百孔”。“孤高也不对，要亲近但是得引导，而不是一味迎合甚至煽动”。<div
+                        class='art_word_p'></div>故宫学研究所所长章宏伟在接受媒体采访时说：“这些年，故宫越来越火。但它越热，我们应该越冷静。”</div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='4'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/629.jpg' data-width='1024'
+                        data-height='627' data-trueheight='682'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 2019年2月12日，北京迎来降雪天气，故宫游客不减。<div class='art_word_p'></div>
+                    故宫曾经是神圣且疏离的。一家五代都在故宫工作的保管员梁金生曾说过，“故宫一直四平八稳的。”
+                    红墙之内，有着600年的历史作为积淀，时间流失的速度都显得模糊。1998年，故宫安装了当时最先进的安保设备，得到过公安机关的表扬。14年后，故宫发生失窃案，丢失数件珍宝，公安局来破案时狠狠批评了一通，故宫上下才意识到安保设备已经老化到这个程度。
+                    <div class='art_word_p'></div>
+                    单霁翔2012年出任故宫博物院院长后，颠覆了四平八稳的既有形象。他上任后，用一年半时间建了中控室，65面大屏幕，指挥着3300个高清摄像头，随后在采访中慢悠悠地对小偷放话“不要惦记故宫”。<div
+                        class='art_word_p'></div>
+                    7年间，许多改变肉眼可见——不再满地垃圾、房上没有了杂草、紫禁城打破500年惯例禁了烟、增加了女卫生间和让游客休息的长椅。最难的是拆临建，数十年里，故宫博物院里积累了137栋临时建筑，有食堂、有办公室，有库房和花房，也有员工浴室和车库，总面积14800平方米。彩钢房不阻燃，有安全隐患，另外一些临建虽然具有功能性，但破坏了古建筑群的美观，这些都在几年的时间里陆续被拆除了。单霁翔亲自动手拉倒了午门下的彩钢房的房顶，留下他自称“有点作秀”的照片。
+                    <div class='art_word_p'></div>
+                    一次，文化部年终要和财政部某司开会，故宫听说后，便主动对接两部委，提供场地、会务、餐饮，积极邀请两方赴宫里开会。会议结束前，单霁翔突然出现，“强行开始了一个声称十分钟的简要汇报，实际上进行了半小时到四十分钟的精彩演讲”，在演讲中提出了紫禁城六百年的宏伟规划。
+                    <div class='art_word_p'></div>事后人们恍然大悟，之所以如此主动积极安排会议，“估计就是为了取得部委财力支持”。<div class='art_word_p'></div>
+                    单霁翔的“机智套路”背后，更多的体现着在体制夹缝中办事的不易。2014年故宫的“百年大修”规划突然被叫停，而其中原因在于，有手艺的老工匠缺少干部身份，退休后不能返聘，传承人没有北京户口也进不来，几个月前还在收麦子的农民被中标单位以低价招揽而来，用着政府采购的低价材料，赶着进度烧钱修复。单霁翔的办法是去政协的双周协商会上“哭诉”8分钟，换来“故宫的事要特事特办”的上级批示。
+                    <div class='art_word_p'></div>
+                    在此环境下，单霁翔明白了“越是主要领导来的时候，越要给他看最不好的地方，看那些荒草萋萋的地方、看那些‘美味’扑鼻的地儿，这样领导的责任心油然而生，才给解决问题。”<div
+                        class='art_word_p'></div>
+                    从成绩单看来，这一招的确屡屡奏效。自2012年担任院长至今，单霁翔解决了不少问题：故宫改革购票制度、推行限流参观；扩大开放区域、开放授权推广文创，无论是针对文物的尊严式保护修葺，还是针对参观者进行的人性化体验增进，都取得了成效。故宫从教科书厚重的历史书写中焕发活力，转变成平易近人的热门景点，以及商界价值巨大的文化IP。
+                    <div class='art_word_p'></div>
+                    在关于单霁翔为故宫赢得生存空间和各类资源的媒体报道下面，偶尔能看到网友“心疼”单霁翔的留言——想要干实事，却要依靠“抖机灵”获得各界的支持和帮助。<div class='art_word_p'>
+                    </div>3<div class='art_word_p'></div>
+                    单霁翔几乎成了故宫唯一被公众认可的发言人。上任后，他进行过1100多次多媒体宣讲，故宫7年间接待过50多次外国元首参观，他经常陪同在侧。民众把对故宫和对他的喜爱绑定。春节期间的“紫禁城里过大年”策划，吸引了众多游客走进故宫，人们看到他会高声喊“单院长，过年好”。他也会客气地回应。
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='5'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/631.jpg' data-width='600'
+                        data-height='374' data-trueheight='407'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 2013年4月26日，单霁翔陪同法国前总统奥朗德及其女友一行参观故宫。<div class='art_word_p'></div>
+                    即使对他稍有微词的工作人员，也对他的“敬业、随和”给予肯定。<div class='art_word_p'></div>
+                    《国家宝藏》总制片人吕逸涛对《环球人物》记者说：“去年我跟单院长约时间谈节目，就定在了国庆节期间。其他时间，他几乎每个假期都在上班，天天在宫里待着。”<div class='art_word_p'>
+                    </div>
+                    每天早上八点半之前，故宫尚未正式开放，戴着000-008编号的工牌，踩着三十年如一日的黑色懒汉鞋，单霁翔开始了日常“巡逻”。路上偶遇同事，彼此示意问好。“官员有两种样子，一种是板着面孔那种，一种就是单院这种”，“随和、平易近人，在食堂和员工一起吃饭还会逗两句嘴”。
+                    <div class='art_word_p'></div>
+                    其实历任馆长都做了很多事，单霁翔能在演讲中骄傲报出精确到个位数的馆藏文物数，还要得益于前任郑欣淼——尽管后者在公众眼中永远要为“十重门”的闹剧背锅。在任十年间，郑欣淼将“盘踞”在故宫13个院落的部门逐一“请出”，“这是一个很难的事。”单霁翔感慨。而其中7个院落即是被国家文物局占用的——那十年间，文物局在任局长恰是单霁翔。
+                    <div class='art_word_p'></div>
+                    “其实我来之前的十年，是故宫做事最实、最多的十年，但因为没有报道，所以人们不知道。现在，我们每个星期至少有一次或者两三次的媒体发布会，我们的一举一动，社会公众都知道。”单霁翔如是总结。也正因如此，他上任后频繁亮相，主动发声，通过一串串精确到令人震惊的数字，一段段颇具传奇色彩的故事重塑了故宫形象，也打造出一个可以拦车奥朗德、禁烟紫禁城的颇具个人英雄主义的形象。
+                    <div class='art_word_p'></div>
+                    尽管这种形象在很多故宫人看来，显得有些“装”。“拦得住法国总统专车，拦不住深圳一家小公司的广告植入？”提及投射在太和门上的“巨幅广告”，故宫工作人员显得异常愤慨。“不过我们吐槽是拿他当出口，其实是体制问题，他也没辙，但是他老吹牛夸海口，所以怼一怼他。”前员工陈仁说。“毕竟中国官场，不是像他自己说的那样，可以怎么拍板、力挽狂澜的院长，很多行为还是受体制牵制、体制决定的。”
+                    <div class='art_word_p'></div>
+                    针对如何调和大众口味与严肃学术，宫内争论也一直未平息。尽管“萌萌哒”文创、帝王生活系列策展取得“接地气”的赞誉，但在很多学术研究者看来，不过是一味向流量屈服，格调实在不高。</div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='6'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/632.jpg' data-width='690'
+                        data-height='316' data-trueheight='344'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 故宫文创产品：“萌萌哒”帝王生活系列。<div class='art_word_p'></div>
+                    一位负责新媒体运营的工作人员介绍，为了迎合公众心理，故宫一位领导要求大家看宫斗剧，学习里面的语言。但许多经过系统学术训练的研究者却十分抵触。“这不就变成史里芬天天拍的河北的奇怪建筑了？”有人私下吐槽。“现在对故宫的宣传就是歌颂帝王生活，完全不倡导普世价值。”“现在策划展览，动不动就是帝王生活，皇帝过年，皇帝过寿，太奇怪了，不引导大家向着一个合理的现代的知识体系，而是就是越活越回去了。”“好多人的心态都不是博物馆研究院了，而是内务府心态。”
+                    <div class='art_word_p'></div>
+                    这些吐槽与单霁翔本人并不直接相关。让新媒体工作人员学些“甄嬛体”话术的是故宫的另一位领导。也有记者问单霁翔看没看《延禧攻略》，他表示没看，“正史还看不过来呢”。<div
+                        class='art_word_p'></div>
+                    除此之外，网红故宫还背负着十三亿公众的期待和审视。故宫雪景受追捧，不下雪单霁翔要着急，就算天随人愿下了雪，雪后要不要扫也要纠结。在故宫，操心的事从来很多很多，“但就是一样一样做。”单霁翔说。<div
+                        class='art_word_p'></div>4<div class='art_word_p'></div>作为故宫博物院院长，单霁翔给自己打70分。<div
+                        class='art_word_p'></div>
+                    在无处不在的监督和随时可能出现的掣肘下，他将自己的雷达全开，随时准备应对危机。他甚至有个独特的“万无一失”的说法——一失就万无。做了999件好事，只要有一件没做好，也会被人们追着问责，甚至是下台。专业人士关于故宫的一次问责，都能让他惊出一身冷汗，有时连饭都不吃了，就要赶快去追查来龙去脉。
+                    <div class='art_word_p'></div>
+                    只有每天回到家、吃完饭，然后沏一杯茶，打开台灯看书，写东西，才是一天最静的时候，一天的全部疲劳也才无法抵抗地袭来。“一般我就是睡觉，躺床上从来五分钟之内睡着。一年可能做不了一次梦，一年也失眠不了一次。”
+                    <div class='art_word_p'></div>
+                    这份“高危职业”算不上肥差。据知情人士介绍，从文物局调任故宫时，单霁翔的秘书都不愿跟来，“因为故宫没什么油水，跟着他又非常辛苦”。故宫施行“收支两条线”制度，尽管单霁翔晒出的15亿文创营业额能打败1500多家A股上市公司，但故宫工作者的工资却并未因此有所提升。
+                    <div class='art_word_p'></div>单霁翔明确地解释过，国家给故宫的拨款是11.2亿。国家给54%，自己要挣剩下的46%。不过所有的收入和捐赠都只能用来做事，不能用来发奖金。
+                    <div class='art_word_p'></div>
+                    以因纪录片《我在故宫修文物》一炮而红的钟表修复师王津为例，单霁翔在采访中介绍其薪资待遇为“正教授，能拿到一万三”。“拿不了、拿不到”，腼腆的王津立刻反驳。一旁的海归博士修复师“起点高”，月薪也不过八千。
+                </div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='7'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/634.jpg' data-width='1080'
+                        data-height='648' data-trueheight='705'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>△ 钟表修复师王津。<div class='art_word_p'></div>
+                    “都是如此。现在留在故宫的，要不就是实现了财务自由，衣食不愁的；要不就是对故宫真爱的人，才能这个踏踏实实在这干。”故宫前员工说。“因为这个体系里，薪资收入非常低。”甚至在“八项规定实施以来，不升反降”。福利收入减少，但事儿却多了。“上元节之夜”“紫禁城里过大年”……每一次主题活动、每一块多开发的展区都意味着相关人员工作量的增加，对薪资待遇的不满有时会转移到针对单霁翔这个领导个人的不满上。
+                    <div class='art_word_p'></div>
+                    那些针对单霁翔的非议，有些不是因为他的为人，而是他处的位置。单霁翔还在文物局的时候，许多故宫人就对他有所耳闻，觉得这个人挺好的，口碑都很好。但是当他成为故宫博物院院长后，矛盾还是会冒出来，“问题特别多，就是事业单位该有的问题。所以他这个这些行为在事业单位有非常大的阻力。”陈仁说，“我对单霁翔个人没什么看法，我挺喜欢他，其实我们怼他就是因为他老说一些很漂亮的话，但是其实他对抗不了这个体制，给大家带不来任何的好处。”
+                    <div class='art_word_p'></div>在移动互联网时代，当故宫从传统博物馆转变为超级IP，如何把控流量与调性的平衡，调和大众与学究的口味，这是历任故宫管理者都不曾面对的课题。
+                    <div class='art_word_p'></div>
+                    “我64岁了，在中国，像我这个年龄早就退休了。”一年前，在接受陈鲁豫的采访时，单霁翔感慨。在故宫7年，他还没有熬成“单老”——那是对已故的故宫前辈单士元的尊称——只是熬成了“老单”。他说自己这辈子不想离开故宫了，从院长的位置退下来后，他可以去故宫研究院搞搞研究，要是能考上志愿者，也愿意当个志愿者。他始终希望能在有生之年看到故宫成为“来了不想走，走了还想来”的文化空间。
+                    <div class='art_word_p'></div>（文中陈仁为化名。本文由“贵圈”（entguiquan）授权转载。本文由腾讯新闻出品。未经允许禁止转载。）<div
+                        class='art_word_p'></div>运营 | 张琳悦<div class='art_word_p'></div>统筹 | 王波</div>
+            </div>
+            <div class='and_image_text_panel'>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='8'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/637.jpg' data-width='1080'
+                        data-height='341' data-trueheight='371'>
+                </div>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='9'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/638.jpg' data-width='1080'
+                        data-height='341' data-trueheight='371'>
+                </div>
+                <div class='wutu_atlas_box'>
+                    <div class='wutu_atlas_bg'></div>
+                    <p class='wutu_desc'>点击加载图片</p>
+                </div>
+                <div class='ait_item_box' data-index='10'>
+                    <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                        data-src='http://139.196.248.235:8089/clt/image/4/896/639.jpg' data-width='1080'
+                        data-height='341' data-trueheight='371'>
+                </div>
+            </div>
+            <div class='anb_news_word'>
+                <div class='anw_word'>文章转载自公众号 贵圈<div class='art_word_p'></div><a class='art_a' data-contType='6'
+                        data-contId='http://mp.weixin.qq.com/s?__biz=MzU2MDEwMTIwMg==&mid=2247489857&idx=1&sn=8de608c59a8d2d2748ed4cf8141c0b44&chksm=fc0c7b7ccb7bf26acf161121c1b7abf2a45473f4ec52f6ef8f21cec18ba00cda90c3fe67f323&scene=27#wechat_redirect'
+                        data-cid='' data-optType='1'>阅读原文</a></div>
+            </div>
+
+        </section>
+        <section class='and_relate_box and_bottom'></section>
+        <section class='and_luokuan'>
+            <div class='al_aditor_in_change'>
+                <p></p>
+            </div>
+            <div class='al_other_change'> </div>
+        </section>
+        <section class='and_special_attention'>
+            <p class='special_title'>特别声明</p>
+            <p class='special_word'>本文为自媒体在澎湃新闻上传并发布，仅代表作者观点，不代表澎湃新闻的观点或立场，澎湃新闻仅提供信息发布平台。</p>
+        </section>
+        <!-- pk投票 -->
+        <div class="and_pk_vote_box">
+            <div class="vote_title">
+                <div class="apt_icon"></div>
+                <div class="apt_right_box">
+                    <p class="apt_word">1111</p>
+                    <div class="vote_jion">
+                        <div class="apj_icon"></div>
+                        <p class="apj_jion_num_box"> <span class="countvote"></span>人参与 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="apvb_pk" data-vote-id="452" id="452">
+                <div class="app_type">
+                    <div class="at_agree"></div>
+                    <div class="at_noagree"></div>
+                    <div class="pk_icon"></div>
+                </div>
+                <div class="at_agree_box aa_word" data-vote-num="" data-option-id="1060">
+                    <p>222</p>
+                </div>
+                <div class="at_noagree_box aa_word" data-vote-num="" data-option-id="1061">
+                    <p>333</p>
+                </div>
+            </div>
+            <div class="at_change_agree_box">
+                <div class="at_agree_red">
+                    <div class="aar_icon"></div>
+                    <p>222</p>
+                </div>
+                <div class="at_agree_blue">
+                    <div class="aab_icon"></div>
+                    <p>333</p>
+                </div>
+            </div>
+        </div>
+        <!-- 普通投票 -->
+        <div class="and_normall_vote_box">
+            <div class="vote_title">
+                <div class="apt_icon"></div>
+                <div class="apt_right_box">
+                    <p class="apt_word">11</p>
+                    <div class="vote_jion">
+                        <div class="apj_icon"></div>
+                        <p class="apj_jion_num_box"> <span class="countvote"></span>人参与 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="anvb_normall_box" data-vote-id="453" id="453">
+                <ul>
+                    <li class="anb_change_type" data-option-id="1062" data-vote-num=""> <span
+                            class="check_title">222</span>
+                        <div class="votenum_box"></div> <span class="check_number"></span>
+                    </li>
+                    <li class="anb_change_type" data-option-id="1063" data-vote-num=""> <span
+                            class="check_title">333</span>
+                        <div class="votenum_box"></div> <span class="check_number"></span>
+                    </li>
+                    <li class="anb_change_type" data-option-id="1064" data-vote-num=""> <span
+                            class="check_title">444</span>
+                        <div class="votenum_box"></div> <span class="check_number"></span>
+                    </li>
+                    <li class="anb_change_type" data-option-id="1065" data-vote-num=""> <span
+                            class="check_title">5555</span>
+                        <div class="votenum_box"></div> <span class="check_number"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='3' data-contId='1277275' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/135/615.jpg' data-width='600' data-height='250'>
+                <div class='ap_num'> 专题 </div>
+            </div>
+            <div class='desc_image'>2018.1.12 专题fxf-专题样式-无正文【点击图片查看详情】</div>
+        </div>
+        <div class='and_atlas_panel'>
+            <div class='wutu_atlas_box'>
+                <div class='wutu_atlas_bg'></div>
+                <p class='wutu_desc'>点击加载图片</p>
+            </div>
+            <div class='ap_item and_relate' data-contType='2' data-contId='1277448' data-cid='' data-optType='0'>
+                <div class='ap_item_madel'></div> <img class='ai_img img_default'
+                    data-src='http://139.196.248.235:8089/clt/image/4/135/939.gif' data-width='600' data-height='250'>
+                <div class='ap_num'> 07:45 </div>
+            </div>
+            <div class='desc_image'>GIF图新闻：fxf测试【点击图片查看详情】</div>
+        </div>
+        <!-- 生成的后台代码 -->
+        <section class='and_news_box'>
+            <div class='anb_news_word'>
+                <div class='anw_word'>
+                    <div style=\"text-align:center;\"></div>
+                </div>
+                <div class='and_image_text_panel'>
+                    <div class='wutu_atlas_box'>
+                        <div class='wutu_atlas_bg'></div>
+                        <p class='wutu_desc'>点击加载图片</p>
+                    </div>
+                    <div class='ait_item_box' data-index='0'>
+                        <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                            data-src='http://139.196.248.235:8089/clt/image/6/292/703.jpg' data-width='600'
+                            data-height='552' data-trueheight='600'>
+                    </div>
+                </div>
+                <div class='anb_news_word'>
+                    <div class='anw_word'>
+                        <font color=\"#808080\">
+                            <div class='art_word_p'></div>
+                        </font>
+                        <div class='art_word_p'></div>2007年7月19日，日本读卖新闻刊登中国毒气受害者二审败诉报道。
+                        从老人机里听到律师告知最终结果的那天，李臣躺在病床上，一整天没有说话，他不甘心，一直以来，他像在对着空气挥舞拳头。<div class='art_word_p'></div>
+                        初到日本，他走在街头，感到陌生、新鲜又恍惚。距离战时的日本已经过去50多年了，道路一尘不染，行人秩序井然地走在马路上。<div class='art_word_p'></div>
+                        在东京的街道，有位日本大姐认出他是中国人，往树墙一边靠过去，给他让路。李臣走到她面前，敬了一个礼。律师团曾组织他们游行，讲述受害经过，募集诉讼善款。一位61岁的大爷，穿着深蓝色的衣服，头发已经稀少，走到李臣跟前，“不知道日本曾做了这么多坏事，作为一个日本人，感到非常耻辱”，他磕了三个响头。
+                    </div>
+                    <B>“历史是活的”
+                        <div class='art_word_p'></div>
+                    </B>
+                    <div class='art_word_p'></div>
+                    <div><B>
+                            <div style=\"text-align:center;\"></div>
+                    </div>
+                    <div class='and_image_text_panel'>
+                        <div class='wutu_atlas_box'>
+                            <div class='wutu_atlas_bg'></div>
+                            <p class='wutu_desc'>点击加载图片</p>
+                        </div>
+                        <div class='ait_item_box' data-index='1'>
+                            <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                                data-src='http://139.196.248.235:8089/clt/image/6/292/705.jpg' data-width='600'
+                                data-height='552' data-trueheight='600'>
+                        </div>
+
+                    </div>
+                    <div class='anb_news_word'>
+                        <div class='anw_word'></B>
+                            <font color=\"#808080\">图说呵呵</font>
+                        </div>
+                        李臣案的胜诉给了“八四”受害者信心，2007年，经与日本政府协商三年无果后，“八四”受害者提起诉讼。<div class='art_word_p'></div>
+                        徐志夫是一审的受害者代表。他整了一套西服，理了头发，什么也没拿，就带了一个皮兜过去了。<div class='art_word_p'></div>
+                        他不知道买什么，就在家附近买了20多个小小的福字，几块手绢儿，印着花的，叠好装到兜里。见到日本友好人士，一人给一个。<div class='art_word_p'></div>
+                        一位将近90岁的老太太，白发苍苍，脸上堆着皱纹，当兵的时候曾在中国做俘虏，后来在东北的医院成了大夫。她握着徐志夫的手，摇了又摇，“对不起，战争给你受害了”。两人唠了很久，说着亲切的家乡话。
+                        <div class='art_word_p'></div>
+                        高明喜欢日本，她跟着律师去了三次。那里的空气澄净、湿润，夜晚，街边一排排商店闪着霓虹灯，商场里卖什么的都有。<div
+                            class='art_word_p'></div>
+                        而在家，日头总是不落，穿凉拖出门，回来时脚底就有一层沙子。她的行走范围只有以家为圆心的一小块，因为免疫系统损伤，她走到几百米外的道边都要大口喘气，有时走也走不回来。
+                        <div class='art_word_p'></div>
+                            从日本回到家一个人呆着，她又感到说不清的难受：那么好的一个地方，为什么曾经造成了这么多的痛苦？
+                    </div>
+                </div>
+                <div class='and_image_text_panel'>
+                    <div class='wutu_atlas_box'>
+                        <div class='wutu_atlas_bg'></div>
+                        <p class='wutu_desc'>点击加载图片</p>
+                    </div>
+                    <div class='ait_item_box' data-index='2'>
+                        <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                            data-src='http://139.196.248.235:8089/clt/image/6/292/704.jpg' data-width='600'
+                            data-height='552' data-trueheight='600'>
+                    </div>
+                </div>
+                <div class='anb_news_word'>
+                    <div class='anw_word'>
+                        <font color=\"#999999\">徐晓晨</font>
+                        <div class='art_word_p'></div>
+                        你说是啥多篇报道显示，仅仅是为证明公民身份所投入的金钱与时间，就足以让许多居民的生活陷入绝境。即使被莫迪称为“人道主义行径”的《公民身份法修正案》，也需要可能已世代居住于阿萨姆邦的居民提供有关证明。这让修正案无法立即扭转阿萨姆邦居民面临的难题，更难以保证政策在实践过程中不因人为因素而出现差错。
+                        <div class='art_word_p'></div>印度《经济时报》称，若“阿萨姆邦模式”推广至全印度，意味着要求约12.5亿印度人重新申请公民身份。
+                    </div>
+                </div>
+                <div class='and_image_text_panel'>
+                    <div class='wutu_atlas_box'>
+                        <div class='wutu_atlas_bg'></div>
+                        <p class='wutu_desc'>点击加载图片</p>
+                    </div>
+                    <div class='ait_item_box' data-index='3'>
+                        <div class='ait_item_box_madel'></div> <img class='anw_img img_default'
+                            data-src='http://139.196.248.235:8089/clt/image/6/292/704.jpg' data-width='600'
+                            data-height='552' data-trueheight='600'>
+                    </div>
+                </div>
+                <div class='anb_news_word'>
+                    <div class='anw_word'>
+                        <font color=\"#999999\">方不方便<div class='art_word_p'></div>
+                        </font>
+                        <div class='art_word_p'></div>CVBS<div class='art_word_p'></div>
+                        vcbv从女女根据报道，阿萨姆邦所有居民都需要将自己登记到NRC上。那些最终未能获得列入资格的居民，必须接受“外国人法庭”的审理。若不满决定，未列入NRC的居民可以上诉。然而，为登记整理证明、前往官方机构确认乃至于上诉，都需要由居民自己“掏腰包”，这让不少本就拮据的家庭陷入窘境。
+                        <div class='art_word_p'></div>据印度《今日商业》（Business
+                        Today）8月报道，未列入NRC的阿萨姆邦居民达190万。这些人拥有约半年的上诉时间，败诉者将面临收容或遣返。但对这些人来说，相邻的孟加拉国已难称得上是家园或是祖国。<div
+                            class='art_word_p'></div>为了收容被“剥夺公民资格”的人，阿萨姆邦官方已经设立六个收容中心。据《印度瞭望》（Outlook
+                        India）杂志11月报道，因“疾病或精神原因”，阿萨姆邦一间收容中心已出现26人死亡。据《印度时报》5月报道，阿萨姆邦一名退休陆军军官也因未能证明自己是“阿萨姆邦人”而被收容。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
